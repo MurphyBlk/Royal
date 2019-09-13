@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+
+  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" media="screen and (max-device-width : 800px)" href="smallscreen.css" type="text/css" />
+  <script src="script.js"></script>
+</head>
+<body>
+    
+<h1 class="titreroyal"> Royal Distribution</h1>
+    <div class='container'>
+<div class='partleft'> 
+    <div class= 'header'>
+
+<!-- Surround the select box within a "custom-select" DIV element.
+Remember to set the width: -->
+<div class="custom-select" style="width:200px;">
+  <select>
+    <option value="0">Choisir le Fournisseur :</option>
+    <option value="1">Belgique</option>
+    <option value="2">Pologne</option>
+    <option value="3">Espagne</option>
+    <option value="4">Dépôt</option>
+
+  </select>
+</div>
+
+  
+<!-- Surround the select box within a "custom-select" DIV element.
+Remember to set the width: -->
+<div class="custom-select" style="width:200px;">
+  <select>
+    <option value="0">Choisir la catégorie :</option>
+    <option value="1">Boissons</option>
+    <option value="2">Épicerie Sucré</option>
+    <option value="3">Épicerie Salée</option>
+    <option value="4">Entretient</option>
+
+  </select>
+</div>
+<!-- Surround the select box within a "custom-select" DIV element.
+Remember to set the width: -->
+<div class="custom-select" style="width:200px;">
+  <select>
+    <option value="0">Choisir la marque :</option>
+    <option value="1">Coca</option>
+    <option value="2">Orangina</option>
+    <option value="3">Fanta</option>
+    <option value="4">Ice Tea</option>
+    <option value="5">Sprite</option>
+
+  </select>
+</div>
+        <div>
+        
+        
+        </div>
+        
+        
+    
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("myDropdown");
+  a = div.getElementsByTagName("a");
+  for (i = 0; i < a.length; i++) {
+    txtValue = a[i].textContent || a[i].innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      a[i].style.display = "";
+    } else {
+      a[i].style.display = "none";
+    }
+  }
+}
+</script>
+   <div class='containerproduit'>
+       <div class='productshow'>
+    <img src="coca1.jpeg"  alt="">
+       <p><button class='buttoncard'>Ajouter</button></p></div>
+       <div class='productshow'>
+     <img src="coca2.jpeg"  alt="">
+       <p><button class='buttoncard'>Ajouter</button></p></div>
+       <div class='productshow'>
+     <img src="coca3.jpeg"  alt="">
+       <p><button class='buttoncard'>Ajouter</button></p></div>
+       <div class='productshow'>
+     <img src="coca5.jpeg"  alt="">
+       <p><button class='buttoncard'>Ajouter</button></p></div>
+              <div class='productshow'>
+    <img src="coca1.jpeg"  alt="">
+       <p><button class='buttoncard'>Ajouter</button></p></div>
+       <div class='productshow'>
+     <img src="coca2.jpeg"  alt="">
+       <p><button class='buttoncard'>Ajouter</button></p></div>
+       <div class='productshow'>
+     <img src="coca3.jpeg"  alt="">
+       <p><button class='buttoncard'>Ajouter</button></p></div>
+       <div class='productshow'>
+     <img src="coca5.jpeg"  alt="">
+       <p><button class='buttoncard'>Ajouter</button></p></div>
+              <div class='productshow'>
+    <img src="coca1.jpeg"  alt="">
+       <p><button class='buttoncard'>Ajouter</button></p></div>
+       <div class='productshow'>
+     <img src="coca2.jpeg"  alt="">
+       <p><button class='buttoncard'>Ajouter</button></p></div>
+       <div class='productshow'>
+     <img src="coca3.jpeg"  alt="">
+       <p><button class='buttoncard'>Ajouter</button></p></div>
+       <div class='productshow'>
+     <img src="coca5.jpeg"  alt="">
+       <p><button class='buttoncard'>Ajouter</button></p></div>
+             
+       </div> 
+        
+        
+        </div>
+    
+<div class='partright'>
+
+    
+       <div class='containerproduit1'>
+ <h1 class="titrepanier"> PANIER</h1>
+           
+        <table class="table">
+  <thead>
+    <tr><th>Article</th><th>Prix</th><th>Quantité</th></tr>
+  </thead>
+  <tbody id="cart-tablebody">
+  </tbody>
+</table>
+
+<p>Sous total : <span class="subtotal"></span>€</p>
+
+<button id="confirm-command">Envoyer la Facture</button>
+       </div> 
+   
+        </div>
+    </div>
+</body>
+</html>
